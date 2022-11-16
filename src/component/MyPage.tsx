@@ -3,6 +3,10 @@ import React from "react";
 const MyPage: React.FC<{ user?: { name: string } }> = ({ user }) => {
   return (
     <div>
+      <label htmlFor="username">이름</label>
+      <input type="text" id="username" />
+      <textarea value={"tom"} readOnly></textarea>
+      <div data-testid="my-div" />
       {user ? (
         <h1>{user.name}님 환영합니다.</h1>
       ) : (
