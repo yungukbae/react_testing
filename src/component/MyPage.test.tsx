@@ -31,7 +31,7 @@ test("유저가 없으면 로그인 문구와 버튼을 보여준다.", () => {
   expect(headEl).toBeInTheDocument();
 
   //input 과 textarea는 default role이 같아 option으로 구분해주어야 한다.
-  //options의 name에 label값을 입력하여 찾거나
+  //options의 name은 해당 default role의 innerHTML값을 입력해주면 해당 값을 가진 엘리먼트를 지목할 수 있따.
   //name => <label htmlFor="username">이름</label>
   //input=> <input type="text" id="username" />
   const textboxEl = screen.getByRole("textbox", {
