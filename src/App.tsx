@@ -1,10 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MyPage from "./component/MyPage";
+import logo from "./logo.svg";
 
 function App() {
+  const user = {
+    name: "Mike",
+  };
+
   return (
     <div className="App">
+      <MyPage user={user} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
